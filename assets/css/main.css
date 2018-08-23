@@ -2093,7 +2093,7 @@ header {
 		line-height: 1.5;
 		margin: 0 0 2em 0;
 		text-transform: uppercase;
-		letter-spacing: 0.05em;
+		letter-spacing: 0.1em;
 	}
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2101,7 +2101,7 @@ header {
 		}
 
 	h2 {
-		font-size: 1.8em;
+		font-size: 1.5em;
 		margin: 0;
 	}
 
@@ -3699,12 +3699,12 @@ header {
 			}
 
 			#footer > .inner section:nth-child(1) {
-				width: calc(66% - 2.5em);
+				width: calc(82% - 2.5em);
 				margin-right: 2.5em;
 			}
 
 			#footer > .inner section:nth-child(2) {
-				width: calc(33% - 2.5em);
+				width: calc(17% - 2.5em);
 				margin-left: 2.5em;
 			}
 
@@ -3742,12 +3742,12 @@ header {
 			}
 
 				#footer > .inner section:nth-child(1) {
-					width: calc(66% - 1.25em);
-					margin-right: 1.25em;
+					width: calc(82% - 1.25em);
+					margin-right: 2.25em;
 				}
 
 				#footer > .inner section:nth-child(2) {
-					width: calc(33% - 1.25em);
+					width: calc(15% - 1.25em);
 					margin-left: 1.25em;
 				}
 
@@ -3756,12 +3756,12 @@ header {
 		@media screen and (max-width: 980px) {
 
 			#footer > .inner section:nth-child(1) {
-				width: 66%;
+				width: 78%;
 				margin-right: 0;
 			}
 
 			#footer > .inner section:nth-child(2) {
-				width: calc(33% - 2.5em);
+				width: calc(22% - 2.5em);
 				margin-left: 2.5em;
 			}
 
@@ -3947,12 +3947,12 @@ header {
 			}
 
 			#footerSmall > .inner section:nth-child(1) {
-				width: calc(66% - 2.5em);
+				width: calc(82% - 2.5em);
 				margin-right: 2.5em;
 			}
 
 			#footerSmall > .inner section:nth-child(2) {
-				width: calc(33% - 2.5em);
+				width: calc(17% - 2.5em);
 				margin-left: 2.5em;
 			}
 
@@ -3990,12 +3990,12 @@ header {
 			}
 
 				#footerSmall > .inner section:nth-child(1) {
-					width: calc(66% - 1.25em);
+					width: calc(82% - 1.25em);
 					margin-right: 1.25em;
 				}
 
 				#footerSmall > .inner section:nth-child(2) {
-					width: calc(33% - 1.25em);
+					width: calc(17% - 1.25em);
 					margin-left: 1.25em;
 				}
 
@@ -4004,12 +4004,12 @@ header {
 		@media screen and (max-width: 980px) {
 
 			#footerSmall > .inner section:nth-child(1) {
-				width: 66%;
+				width: 82%;
 				margin-right: 0;
 			}
 
 			#footerSmall > .inner section:nth-child(2) {
-				width: calc(33% - 2.5em);
+				width: calc(17% - 2.5em);
 				margin-left: 2.5em;
 			}
 
