@@ -91,7 +91,7 @@ $(document).ready(function(){
 							<!-- Nav -->
 								<nav>
 									<ul>
-										<li><a href="#menu">Menu</a></li>
+										<li><a id="hideMenu" href="#menu" style="display: none;">Menu</a></li>
 									</ul>
 								</nav>
 
@@ -267,6 +267,19 @@ $(document).ready(function(){
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+			<script type="text/javascript">
+				// When the user scrolls down 400px from the top of the document, show the button
+				window.onscroll = function() {scrollFunction()};
+
+				function scrollFunction() {
+				    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+				        document.getElementById("hideMenu").style.display = "block";
+				    } else {
+				        document.getElementById("hideMenu").style.display = "none";
+				    }
+				}
+			</script>
 
 	</body>
 </html>
