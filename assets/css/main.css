@@ -142,15 +142,46 @@ header {
 	}
 
 
-/* About image */
+/* About */
+
+	#helloTop {
+		font-size: 2.25em;
+		margin: 0;
+	}
+	#helloBottom {
+		font-size: 2.25em;
+		margin: 0;
+	}
 
 	#aboutImg {
 		padding-left: 0; 
 		padding-top: 10px; 
-		margin-bottom: 0; 
+		margin-bottom: 15%; 
 		width: 37%; 
 		float: left;
 	}
+
+	@media screen and (max-width: 1080px) {
+			#aboutImg {
+				margin-bottom: 1%; 
+			}
+	}
+
+	@media screen and (max-width: 463px) {
+			#aboutImg {
+				margin-bottom: 1%;
+				margin-top: 5%;
+				width: 50%;
+				display: inline-block;
+			}
+			#helloTop {
+				display: block !important;
+			}
+			#helloBottom {
+				display: none;
+			}
+	}
+
 
 
 /* Wide */
@@ -224,6 +255,7 @@ header {
 				padding: 18em 0 3em 0 !important;
 				margin-top: -80px;
 			}
+
 	}
 
 
@@ -281,6 +313,7 @@ header {
 				padding: 14em 0 3em 0 !important;
 				margin-top: -45px;
 			}
+
 
 	}
 
