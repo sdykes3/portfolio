@@ -99,15 +99,15 @@
 									<h4 style="margin: 0; display: inline;">My roles:</h4>
 									Brainstorming, Research, Web-App Development, Debugging, User Testing
 									<br><br>
-									<button class="prjBtn" onclick="window.location.href='https://sdykes3.github.io/forestVR/'">Main Mode</button>
+									<button class="prjBtn" onclick="window.open('https://sdykes3.github.io/forestVR/')">Main Mode</button>
 									<br>
-									<button class="prjBtn" onclick="window.location.href='https://sdykes3.github.io/forestVR/debug.html'">Debug Mode</button>
-									<button class="prjBtn" onclick="window.location.href='https://github.com/sdykes3/forestVR'">Github</button>
+									<button class="prjBtn" onclick="window.open('https://sdykes3.github.io/forestVR/debug.html')">Debug Mode</button>
+									<button class="prjBtn" onclick="window.open('https://github.com/sdykes3/forestVR')">Github</button>
 								</div>
 							</div>
 
 							<h3>Context</h3>
-							<p>The VR webapp is designed to be viewed on a smartphone and updates in response to current GPS location. There are 2 scenes that users can find - a forest meadow and a creek. The forest meadow is located at the busy intersection of North Avenue and Techwood Drive, to constrast with the peaceful and calming forest ambience. The creek is located at the intersection of Penn and Ponce, which is the historic location of a now non-existant branch of Clear Creek. The 3D tree models can be tapped for information about the forest.</p>
+							<p>The VR webapp is designed to be viewed on a smartphone and updates in response to current GPS location. There are 2 scenes that users can find - a forest meadow and a creek. The forest meadow is located at the busy intersection of North Avenue and Techwood Drive, to contrast with the peaceful and calming forest ambience. The creek is located at the intersection of Penn and Ponce, which is the historic location of a now non-existent branch of Clear Creek. The 3D tree models can be tapped for information about the forest.</p>
 							<p class="lessSpace">The <a href="https://sdykes3.github.io/forestVR/">project website </a>  can be found hosted on GitHub Pages. For users who wish to see the scenes without walking to the physical coordinates, I have created a <a href="https://sdykes3.github.io/forestVR/debug.html">debugging version</a> which allows travel via clicking on colored spheres. It works for Android and iPhone (although automatic audio playing may not work on iPhone), in any web browser. This was created using A-Frame, Javascript, and HTML.</p>
 
 
@@ -167,8 +167,8 @@
 
 							<h3>VR Development</h3>
 							<p>This was my first virtual reality development project, and I had several development difficulties. The main challenge was with regards to the 3D models I supplemented the scenes with. Ideally, I would have liked my research to lead to a variety of authentic plant species models in the scenes, accompanied by tooltip-like information about them. This would immerse the user in a realistic forest scene. </p>
-							<p>However, the availability of free 3D models was not enough to accomodate all of the specific vegetation I envisioned, so generics were used. Also, little to no shrubs and small plants were available, so I placed mostly trees. </p>
-							<p>Secondly, many of the model textures do not import correctly, depending upon the version of A-Frame I used. I ultimately sacrificed tree model textures for A-Frames ability to work with the pop-up informative text, a more valued component of the experience. This sacrifice allows the functional vision of the project to shine through, but I am still seeking a solution to the unsightly lack of texture for the models. I have still kept the models, though. This is because they are the buttons that toggle their cooresponding information visibility, allowing users to turn the text off and enjoy the forest scenery when desired.</p>
+							<p>However, the availability of free 3D models was not enough to accommodate all of the specific vegetation I envisioned, so generics were used. Also, little to no shrubs and small plants were available, so I placed mostly trees. </p>
+							<p>Secondly, many of the model textures do not import correctly, depending upon the version of A-Frame I used. I ultimately sacrificed tree model textures for A-Frames ability to work with the pop-up informative text, a more valued component of the experience. This sacrifice allows the functional vision of the project to shine through, but I am still seeking a solution to the unsightly lack of texture for the models. I have still kept the models, though. This is because they are the buttons that toggle their corresponding information visibility, allowing users to turn the text off and enjoy the forest scenery when desired.</p>
 
 
 							<h2 style="margin-bottom: -1em">Process</h2>
@@ -191,34 +191,27 @@
 							<h3>Development</h3>
 							<p>This VR experience was developed using A-Frame, Javascript, and HTML. It is intended to be used in a mobile web browser, but can also be paired with VR devices such as Google Cardboard. It works with mobile version of Chrome, Firefox, and Safari, and is hosted on Github Pages currently.</p>
 							<p>Three scenes exist: default context/navigation, a forest, and a creek. These are hidden and shown based on GPS information from the mobile device. When a scene is activated, ambient looping sound is triggered with Javascript. An A-Frame cursor is present, and when the user aims it at a 3D model and taps, a piece of informative text's visibility is toggled.</p>
-							<p>In an earlier version, I used Unity in conjunction with A-Frame to place the models (which were able to be textured at the time). However, this older version of A-Frame was not compatibile with text, so I changed to the newer version which I believe causes the textureless model issue.</p>
+							<p>In an earlier version, I used Unity in conjunction with A-Frame to place the models (which were able to be textured at the time). However, this older version of A-Frame was not ccompatible with text, so I changed to the newer version which I believe causes the textureless model issue.</p>
 
-		        <div class="rslides_container">
-		            <ul class="rslides slide1" id="slider1">
-		                <li id="first">
-		                    <a class="item" href="images/vrforest/debug.png" data-lightbox="image-1" data-title="Debugging scene; Tapping on the colored spheres allows travel without actually walking from place to place.">
-		                        <img src="images/vrforest/debug.png" /> </a>
-		                </li>
-		                <li id="first">
-		                    <a class="item" href="images/vrforest/unity1.png" data-lightbox="image-1" data-title="View of tree models being placed in Unity.">
-		                        <img src="images/vrforest/unity1.png" /> </a>
-		                </li>
-		                <li id="first">
-		                    <a class="item" href="images/vrforest/unity2.png" data-lightbox="image-1" data-title="A bug with some of the free models I found.">
-		                        <img src="images/vrforest/unity2.png" /> </a>
-		                </li>
-		            </ul>
-		        </div>
+							<a class="lightboxLink" href="images/vrforest/debug.png" data-lightbox="image-1" data-title="Debugging scene; Tapping on the colored spheres allows travel without actually walking from place to place.">
+              					<img class="itemThird" src="images/vrforest/debug.png"/>
+           					</a>
+
+							<a class="lightboxLink" href="images/vrforest/unity1.png" data-lightbox="image-1" data-title="View of tree models being placed in Unity.">
+              					<img class="itemThird" src="images/vrforest/unity1-1.png"/>
+           					</a>
+
+							<a class="lightboxLink" href="images/vrforest/unity2.png" data-lightbox="image-1" data-title="A bug with some of the free models I found.">
+              					<img class="itemThird" src="images/vrforest/unity2.png"/>
+           					</a>
 
 							<h3>User Testing</h3>
 							<p>I tested the project with a handful of users, as well as testing it for myself during development. Feedback was generally favorable, and I improved instruction and context for the experience based on how much users understood the application. Users generally thought that it was "very cool" and represented "something [they] had never really thought about before." Basing it in fact went over very well, and one user said she found it be "very peaceful."</p>
 							<p>Unfortunately, I also found that some technical problems limit the user experience. As previously mentioned, the textureless models were found to break immersion. Additionally, cursor feedback when hovering over the trees (to signal that they can be tapped for information) is currently not present, due to the "fuse" setting on the cursor. Turning fuse to true would result in a nice animation but no ambient sound, and vise verse, ultimately resulting in abandonment of the hover animation in favor of audio. However, I found that most users could have benefited from this type of cue.</p>
 
 
-
-
 							<h2>Reflection</h2>
-							<p>Given more time, I would really have liked to further address some of the technical issues. Textured tree models without sacrificing the informative text would be my top priority. This is followed by the lack of a cursor animation over models (without sacrificing ambient sound) so users can know that they should try tapping.</p>
+							<p>Given more time, I would have liked to further address some of the technical issues. Textured tree models without sacrificing the informative text would be my top priority. This is followed by the lack of a cursor animation over models (without sacrificing ambient sound) so users can know that they should try tapping.</p>
 							<p>Providing better instructions, giving directional feedback on the locations, and possibly finding the originally intended plant species models would also be other good improvements.</p>
 							<p>Overall, however, this was a very fun project. I enjoyed the research quite a bit, and loved getting to develop a virtual reality experience. This is something that I am very glad to have developed, and is perhaps the first of many VR / MR projects that I will work on.</p>
 						</div>
