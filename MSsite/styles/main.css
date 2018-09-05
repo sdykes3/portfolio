@@ -1,0 +1,482 @@
+
+body {
+  padding: 0;
+  background: #5B626D;
+  color: #ffffff;
+  font-size: 16px;
+}
+  body h1, h2, h3, h4, h5 {
+    color: #ffffff;
+  }
+  body h5 {
+    padding-top: 10px;
+  }
+  body a {
+    color: #202c3c;
+  }
+    body a:hover {
+      color: #8D9091;
+    }
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+
+/*******************************/
+/* LANDING PAGE */
+/*******************************/
+.home-bg {
+  background-image: url(../images/landingPage.jpg);
+  background-repeat: no-repeat;
+  background-attachment: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.landingIntro {
+  background-color: #394659;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+
+/*******************************/
+/* NAVIGATION BAR */
+/*******************************/
+.header {
+  margin-bottom: 10px;
+  /* No header padding, supplement navbar with it instead */
+  padding-left: 0px;
+  padding-right: 0px;
+}
+  .header .navbar {
+    background-color: #394659;
+    border: none;
+  }
+    .header .navbar .navbar-brand {
+      color: white;
+      height: 55px;
+      font-size: 22px;
+      line-height: 22px;
+    }
+    .header .navbar .nav a {
+      padding: 0px;
+      margin: 15px;
+      color: white;
+      font-size: 15px;
+      line-height: 22px;
+    }
+      .header .navbar .nav a:hover {
+        color: #8D9091;
+      }
+
+.slashes {
+  margin-top: 15px;
+  visibility: hidden;
+}
+
+
+/*******************************/
+/* BLOG PAGE */
+/*******************************/
+#postContainer {
+  padding-right: 10%;
+  padding-left: 0;
+}
+
+
+.post {
+  margin-bottom: 40px;
+  margin-right: 8%;
+}
+.postDate {
+
+}
+.postTitle {
+  margin-top: 0;
+}
+.postText {
+  
+}
+.postPic {
+  width: 30%;
+  max-height: 150px;
+  padding: 5px;
+}
+
+
+#postSidebar {
+
+}
+
+/*******************************/
+/* PROJECTS PAGE */
+/*******************************/
+.projectLine {
+  margin-bottom: 50px;
+}
+
+.projectPic {
+  width: 50%;
+/*  display: block;
+  margin: auto;*/
+/*  position: absolute;
+  right: 5%;*/
+}
+
+    .projectLink {
+      font-size: 16px;
+      margin: 0;
+      margin-right: 35px;
+      background-color: #394659 !important;
+      border: none;
+    }
+      .projectLink:hover {
+        background-color: #455568;
+      }
+
+
+/*******************************/
+/* CONTAINER FOR PAGE CONTENT */
+/*******************************/
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.container {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+  .container .filter li {
+    display: inline-block;
+    padding-right: 30px;
+  }
+    .container .filter li a {
+      color: white;
+    }
+
+  .container .left .description {
+    padding-bottom: 10px;
+  }
+    .container .left .description h4 {
+      font-size: 20px;
+    }
+
+  .container .right .buttons {
+    text-align: center;
+    padding: 10px 0 15px 0;
+  }
+    .container .right .buttons button {
+      font-size: 16px;
+      margin: 5px 10px 5px 10px;
+      background-color: #394659;
+      border: none;
+    }
+      .container .right .buttons button:hover {
+        background-color: #455568;
+      }
+
+  }
+
+
+/*******************************/
+/* ABOUT PAGE */
+/*******************************/
+.aboutPara {
+  margin-top: 40px;
+  padding-left: 30px;
+}
+.aboutPic {
+  width: 85%;
+  margin-left: 15%;
+  max-height: 540px;
+  max-width: 360px;
+}
+
+/* Social media bar on About page */
+.contactbar {
+  min-width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+#logos {
+  text-align: center;
+  list-style-type: none;
+  height: 50px;
+  padding: 0;
+  margin: 0 0 0 0;
+  background-position: center;
+  padding-top: 8px;
+}
+  #logos li {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    line-height: 20px;
+    width: 18%;
+  }
+    #logos li a {
+      display: block;
+      padding: 0;
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+  #logos li img {
+    max-width: 35px;
+  }
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+  }
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Show slashes when bigger than a mobile view */
+  .slashes {
+    visibility: visible;
+  }
+
+}
+
+
+
+/********************************/
+/* FILTER */
+/********************************/
+.postFilter {
+  margin-bottom: 25px;
+}
+  .postFilter a {
+    margin-right: 15px;
+    margin-left: -15px;
+    color: #ffffff;
+    font-size: 16px;
+  }
+    .postFilter a input {
+      margin-right: 5px;
+      visibility: hidden;
+    }
+
+    .postFilter a:hover {
+      color: grey;
+      text-decoration: none;
+    }
+    .postFilter a.current {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+
+/* Fancy radio buttons */
+.check{
+  display: inline-block;
+  position: relative;
+  border: 3px solid #AAAAAA;
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  top: 2px;
+  left: 18px;
+  z-index: 5;
+  transition: border .1s linear;
+  -webkit-transition: border .1s linear;
+}
+
+a:hover .check {
+  border: 3px solid grey;
+}
+a:hover .currentButton {
+  border: 3px solid #FFFFFF;
+}
+
+.check::before {
+  display: block;
+  position: relative;
+  content: '';
+  border-radius: 100%;
+  height: 14px;
+  width: 14px;
+  margin: auto;
+  transition: background 0.1s linear;
+  -webkit-transition: background 0.1s linear;
+}
+
+a .currentButton {
+  border: 3px solid #FFFFFF;
+}
+a .currentButton:hover {
+  border: 3px solid #FFFFFF;
+}
+
+a .currentButton::before{
+  background: #FFFFFF;
+  position: relative;
+  top: -2px;
+  left: -2px;
+}
+/* End fancy radio buttons */
+
+
+
+
+
+
+/*******************************/
+/* SLIDESHOW */
+/*******************************/
+.tooltip {
+  background: rgba(0, 0, 0, 0.7);
+  width: 300px;
+  height: 80px;
+  position: absolute;
+  bottom: 30px;
+  left: -300px;
+  transition: all 0.3s ease-in-out;
+}
+  .tooltip h1 {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 50px;
+    padding: 0 0 0 10px;
+  }
+  .tooltip h2 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 0 0 0 10px;
+  }
+
+.rslides:hover .tooltip {
+  left: 0;
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 80%;
+  /*height: 450px;*/
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+  .rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .rslides img {
+    display: block;
+    height: auto;
+    /*float: left;
+    width: 100%;*/
+    margin-left: 5%;
+    width: 90% !important;
+    border: 0;
+  }
+
+.rslidesMin img {
+  display: block;
+  height: auto;
+  margin-left: 12%;
+  width: 76% !important;
+  border: 0;
+}
+
+.rslides_container {
+  padding-top: 50px;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.centered-btns_nav {
+  z-index: 10;
+  position: absolute;
+  -webkit-tap-highlight-color: transparent;
+  top: 50%;
+  left: 5%;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+  height: 61px;
+  width: 38px;
+  background: transparent url("../images/themes.gif") no-repeat left top;
+  margin-top: -45px;
+}
+  .centered-btns_nav:active {
+    opacity: 1.0;
+  }
+
+  .centered-btns_nav:focus {
+    outline: none;
+  }
+
+  .centered-btns_nav.next {
+    left: auto;
+    background-position: right top;
+    right: 5%;
+  }
+
+.centered-btns_tabs {
+  margin-top: 10px;
+  text-align: center;
+  padding-left: 0;
+}
+  .centered-btns_tabs li {
+    display: inline;
+    float: none;
+    _float: left;
+    *float: left;
+    margin-right: 5px;
+  }
+
+  .centered-btns_tabs a {
+    text-indent: -9999px;
+    overflow: hidden;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background: #ccc;
+    background: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    _display: block;
+    *display: block;
+    -webkit-box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
+    width: 9px;
+    height: 9px;
+  }
+
+.centered-btns_here a {
+  background: #222;
+  background: rgba(0, 0, 0, 0.8);
+}
