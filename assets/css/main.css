@@ -3089,7 +3089,7 @@ header {
 			opacity: 0.25;
 		}
 
-/* Tiles */
+/* Tiles with 4 projects on a row (overwritten below, unless "Tiles with 3 projects" is commented out) */
 
 	.tiles {
 		display: -moz-flex;
@@ -3408,6 +3408,83 @@ header {
 				}
 
 		}
+
+
+/* Tiles with 3 projects per row, overwriting the above CSS */
+
+.tiles article {
+	width: calc(30.33333% - 2.25em);
+	margin: 2em 0 0 4em;
+}
+
+@media screen and (max-width: 1280px) {
+
+	.tiles article {
+		width: calc(30.33333% - 2.25em);
+		margin: 2em 0 0 3.5em;
+	}
+}
+
+@media screen and (max-width: 980px) {
+
+	.tiles article {
+		width: calc(30.33333% - 2.25em);
+		margin: 2em 0 0 3.5em;
+	}
+}
+
+@media screen and (max-width: 736px) {
+
+	.tiles {
+		margin: -1.25em 0 0 -1.25em;
+	}
+
+		.tiles article {
+			width: calc(50% - 1.25em);
+			margin: 1.25em 0 0 1.25em;
+		}
+
+			.tiles article:hover > .image {
+				-moz-transform: scale(1.0);
+				-webkit-transform: scale(1.0);
+				-ms-transform: scale(1.0);
+				transform: scale(1.0);
+			}
+
+			/*Turn on constant dimming of tile background images*/
+			.tiles article > .image:before {
+				background-color: #333333;
+				opacity: 0.6;
+			}
+
+			/*Make text visibile on small devices, without hover*/
+			.tiles article > a .content {
+				opacity: 100 !important;
+				margin-top: -6em;
+			}
+
+			/*Stop text from moving on hover*/
+			body:not(.is-touch) .tiles article:hover .content {
+				max-height: 0em;
+				opacity: 1;
+			}
+}
+
+@media screen and (max-width: 480px) {
+
+	.tiles {
+		margin: 1em;
+	}
+
+		.tiles article {
+			width: 100%;
+			margin: 1.25em 0 0 0;
+		}
+
+		.tiles article > .image {
+			margin: 1.25em 0 0 0;
+		}
+}
 
 /* Header */
 
