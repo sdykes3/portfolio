@@ -3857,12 +3857,12 @@ header {
 			}
 
 			#footer > .inner section:nth-child(1) {
-				width: calc(82% - 2.5em);
+				width: calc(77% - 2.5em);
 				margin-right: 2.5em;
 			}
 
 			#footer > .inner section:nth-child(2) {
-				width: calc(17% - 2.5em);
+				width: calc(21% - 2.5em);
 				margin-left: 2.5em;
 			}
 
@@ -3900,12 +3900,14 @@ header {
 			}
 
 				#footer > .inner section:nth-child(1) {
-					width: calc(82% - 1.25em);
+					/*width: calc(82% - 1.25em);*/ /*For 2 items in Follow section*/
+					width: calc(77% - 1.25em);
 					margin-right: 2.25em;
 				}
 
 				#footer > .inner section:nth-child(2) {
-					width: calc(15% - 1.25em);
+					/*width: calc(15% - 1.25em);*/
+					width: calc(21% - 1.25em);
 					margin-left: 1.25em;
 				}
 
@@ -3914,18 +3916,20 @@ header {
 		@media screen and (max-width: 980px) {
 
 			#footer > .inner section:nth-child(1) {
-				width: 78%;
+				/*width: 78%;*/
+				width: 68%;
 				margin-right: 0;
 			}
 
 			#footer > .inner section:nth-child(2) {
-				width: calc(22% - 2.5em);
+				/*width: calc(22% - 2.5em);*/
+				width: calc(32% - 2.5em);
 				margin-left: 2.5em;
 			}
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 737px) {
 
 			#footer {
 				padding: 3em 0 1em 0 ;
