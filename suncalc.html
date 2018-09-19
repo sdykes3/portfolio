@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Stephanie Dykes | Green Guide</title>
+		<title>Stephanie Dykes | Suncalc</title>
 		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -111,8 +111,8 @@
 							<p>SunCalc is designed for busy people who are unfamilar with the sunlight levels around their homes and do not have time to check and calculate hourly light levels. SunCalc watches over the spot it is placed in and tells users how much daily sunlight is present, measured according to the sunlight categories you see listed on seed packets (Full Sun, Partial Sun/Shade, Full Shade). This allows the user to know what kind of plants might be suitable for a particular area of their garden, or to troubleshoot why pre-existing plants might not be faring so well in a certain location. My role was predominantly researching about plants and sunlight levels, helping choose electrical components, and soldering the prototype. </p>
 							<h2 style="margin-bottom: -1em">Challenges</h2>
 							<h3>Designing for various types of plant species</h3>
-							<p>The largest challenge of this project was to design a helpful gardening tool for gardening various skills levels and a broad spectrum of plants. We also wanted our product to be compatible with both indoor and outdoor plants. Given all of this, our product also needed to be simple and easy to decode with a single glance. </p>
-							<p>To accomodate all of these factors, we focused heavily on the way the device would represent how much light it recieves. After asking questions such as "How much light does a plant need?" and "How do sunlight needs differ among plant species?" we arrived at our solution: the sunlight metric listed on the back of seed packets. These instructions are accessible and used by all ranges of expertise, and could easily be encoded into our design. </p>
+							<p>The largest challenge of this project was to design a helpful gardening tool for various skills levels and a broad spectrum of both indoor and outdoor plants. Despite covering a large range of scenarios, we also needed our product to be simple and easy to decode with a single glance. </p>
+							<p>To accomodate all these factors, we focused heavily on the way the device would represent how much light it recieves. After asking questions such as "How much light does a plant need?" and "How do sunlight needs differ among plant species?" we arrived at our solution: The sunlight metric listed on the back of seed packets. These instructions are accessible and used by all ranges of expertise, and could easily be encoded into our design. </p>
 							<p>As a result, we mapped our 6 LEDs to an hour of sunlight each, with each set of two representing a category: Full Shade (defined as 1-2 hours of direct sunlight), Partial Sun/Shade (3-4 hour of direct sunlight), and Full Sun (5-6+ hours). Anything above 6 hours is still considered Full Sun and has no special terminology, so lights were not added beyond this. </p>
 
 							<a class="lightboxLink" href="images/suncalc/slide_mapping.png" data-lightbox="image-1" data-title="Mapping of LEDs to Shade (blue), Partial Sun (yellow), and Full Sun (orange) in sets of two lights each">
@@ -120,9 +120,9 @@
            					</a>
 
 							<h3>Hardware Choices</h3>
-							<p>To a lesser degree, researching and choosing compatible hardware components was also a challenge. All group members were beginners with hardware prototyping, and we wanted to leave our options open to any conceptual revisions given the short timeframe of the project. We went with a Flora board due to its abundance of available pins, and ordered a very (probably overly) large battery because we did not know how much power our device would draw and therefore need to stay on for 24 hours. </p>
-							<p>We considered opting for a solar panel rather than battery, which is the obvious solution from a conceptual standpoint. However, with the deadline looming and shipping times to consider, we went with a safer choice due to not knowing for certain how much power a solar panel can provide or how much power our particular device would require. </p>
-							<p>We also ordered a WiFi adapter (which we did not have time to implement) in case we had a chance to use Adafruit I/O to graph and keep track of sunlight measurements over time. This is something that we wanted for our product, as users would not want to have to check the SunCalc every day. However, due to time constraints (and power concerns), this was not used in the final prototype. These are all issues that I would definitely have liked to have more time to explore better solutions for. </p>
+							<p>Researching and choosing compatible hardware components was also a challenge for this project. Due to tight time constraints and limited prototyping experience, we wanted our initial hardware order to leave our options open to any later conceptual revisions. We chose a Flora board due to its abundance of available pins and ordered a high capacity battery to ensure our device could stay powered for well over 24 hours. </p>
+							<p>We considered opting for a solar panel rather than battery, which is a strong alternative from a conceptual standpoint. However, with the deadline looming and shipping times to consider, we went with a safer choice due to not knowing for certain how much power a solar panel can provide or how much power our particular device would require. </p>
+							<p>We also ordered a WiFi adapter in the hopes of using Adafruit I/O to graph and track sunlight measurements over time. In the ideal version of our product, the adapter would allow users to check these easy graphs whenever their busy schedules allow. However, due to time constraints and power concerns, this was not used in the pictured final prototype. </p>
 
 
 							<a class="lightboxLink" href="images/suncalc/slide_comp.png" data-lightbox="image-1" data-title="Components inside of final prototype.">
@@ -131,7 +131,7 @@
 
 
 
-							<h2>Process</h2>
+							<h2 style="margin-bottom: -1em; margin-top: 1em">Process</h2>
 
 							<h3>Concept</h3>
 							<p>The inspiration for the concept came from looking at various existing DIY guides, as per the class instructions. We knew we wanted to focus on a gardening aid, and saw many examples of water measurement tools for plants but few for sunlight. Hence, we chose to create a sunlight calculator in order to contribute a device that has not been documented quite as much. </p>

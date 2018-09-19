@@ -2236,6 +2236,64 @@ header {
 		 width: 50%;
 	}
 
+	.item3Model{
+		 margin-left: 44%;
+		 width: 50%;
+	}
+
+	.itemStackModel {
+		 margin-bottom: 1em;
+		 margin-left: -10%;
+		 width: 63%
+	}/*
+
+	.item3Model{
+		 margin-left: 17%;
+		 width: 50%;
+		 width: 15em;
+		 margin-left: 13em;
+	}
+
+	.itemStackModel {
+		 margin-bottom: 0em;
+		 margin-left: 1em;
+		 width: 19.2em;
+	}
+
+
+	@media screen and (max-width: 900px) {
+		.item3Model{
+			margin-left: 7em !important;
+		}
+	}
+	@media screen and (max-width: 800px) {
+		.item3Model{
+			margin-left: 5em !important;
+		}
+	}
+	@media screen and (max-width: 770px) {
+		.item3Model{
+			margin-left: 3em !important;
+		}
+	}
+	@media screen and (max-width: 690px) {
+		.item3Model{
+			margin-left: 1em !important;
+		}
+	}
+	@media screen and (max-width: 640px) {
+		.item3Model{
+			position: relative !important;
+			margin-left: 30% !important;
+			margin-right: 30% !important;
+		}
+		.itemStackModel {
+			position: relative !important;
+			margin-left: 27% !important;
+			margin-right: 27% !important;
+		}
+	}*/
+
 	@media screen and (max-width: 991px) {
 
 		.detailsBox {
