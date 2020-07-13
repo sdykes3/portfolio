@@ -59,10 +59,10 @@ $(document).ready(function(){
 		<!-- Intro Header -->
 			<div id="header">
 				<!-- <span class="logo icon fa-paper-plane-o"></span> -->
-				<span><img src="images/icon.svg" style="width: 8%" alt="" /></span>
+				<span><img id="landingLogo" src="images/icon.svg" style="width: 8%" alt="" /></span>
 
 				<h1>Hi, I'm Stephanie!</h1>
-				<p>I'm a passionate and detail-oriented UX Designer who loves <a class="introLinks" href="#projects">making things</a>.
+				<p>I'm a passionate and detail-oriented UX Designer who loves <a class="introLinks" href="#projects">clean design</a>.
 				<br />
 				Feel free to reach out if you want to know more <a class="introLinks" href="about.html">about me</a>.</p>
 			</div>
@@ -90,6 +90,7 @@ $(document).ready(function(){
 								<nav>
 									<ul>
 										<li><a id="hideMenu" href="#menu" style="display: none;">Menu</a></li>
+										<!-- <li><a href="#menu">Menu</a></li> -->
 									</ul>
 								</nav>
 
@@ -269,7 +270,7 @@ $(document).ready(function(){
 				window.onscroll = function() {scrollFunction()};
 
 				function scrollFunction() {
-				    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+				    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 400) {
 				        document.getElementById("hideMenu").style.display = "block";
 				    } else {
 				        document.getElementById("hideMenu").style.display = "none";

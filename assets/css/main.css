@@ -138,48 +138,58 @@ header {
 		margin-top: -95px;
 		/*Changed based on screen size to not cut off hover effects on tiles*/
 		padding: calc(460px + 6em) 0 10em 0;
-		position: relative;
+		/*position: relative;*/
 	}
 
 
 /* About */
 
-	#helloTop {
-		font-size: 2.25em;
-		margin: 0;
-	}
-	#helloBottom {
-		font-size: 2.25em;
-		margin: 0;
-	}
-
-	#aboutImg {
-		padding-left: 0; 
-		padding-top: 10px; 
-		margin-bottom: 15%; 
-		width: 37%; 
+	#aboutImg1 {
+		padding: 10px;
+		width: 40%; 
 		float: left;
 	}
 
-	@media screen and (max-width: 1080px) {
-			#aboutImg {
-				margin-bottom: 1%; 
+	#aboutImg2 { 
+		padding: 10px;
+		width: 40%;
+		float: right;
+	}
+
+
+	@media screen and (max-width: 1050px) {
+			#aboutSpacing {
+				display: none;
+			}
+	}
+
+	@media screen and (max-width: 763px) {
+			#aboutImg1 {
+				padding: 0;
+				margin-top: 5%;
+				width: 55%;
+				display: inline-block;
+			}
+			#aboutImg2 {
+				padding: 0;
+				margin-top: 5%;
+				width: 55%;
+				display: inline-block;
 			}
 	}
 
 	@media screen and (max-width: 463px) {
-			#aboutImg {
-				margin-bottom: 0%;
-				margin-right: 2%;
+			#aboutImg1 {
+				padding: 0;
 				margin-top: 5%;
-				width: 150px;
+				width: 55%;
 				display: inline-block;
 			}
-			#helloTop {
-				display: block !important;
-			}
-			#helloBottom {
-				display: none;
+			#aboutImg2 {
+				padding: 0;
+				margin-top: 5%;
+				width: 55%;
+				display: inline-block;
 			}
 	}
 
@@ -3725,7 +3735,6 @@ header {
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 100%;
 			padding: 2.75em;
 			opacity: 0;
 			overflow-y: auto;
@@ -4106,6 +4115,10 @@ header {
 
 	@media screen and (max-width: 736px) {
 
+		#landingLogo {
+			width: 12% !important;
+		}
+
 		/* Footer */
 
 			#footerSmall {
@@ -4133,6 +4146,11 @@ header {
 /* Mobile (Portrait) */
 
 	@media screen and (max-width: 480px) {
+
+
+		#landingLogo {
+			width: 16% !important;
+		}
 
 		/* Footer */
 
