@@ -15,12 +15,17 @@
 */
 
 :root {
-	/*light green #5DA032*/
-	/*dark green #215102*/
-    --hover-color: #215102; 
-    --hover-light: #5DA032; 
+	/*logo green #1B442B*/
+	/*logo blue #265f70*/
+	/*decent lighter green for hover 28633D*/
+    --hover-color: #1B442B; /*green*/
+    --hover-light: #ffffff;
     --hover-intro: white; 
+    --brand-green: #1B442B; /*for menu background mostly*/
+    --menu-title: #ffffff;
+    --medium-emphasis: #ffffff90; /*for menu options before hover*/
 }
+
 
 header {
 	text-align: center;
@@ -2168,6 +2173,7 @@ header {
 		font-size: 1.2em;
 		margin: 0px 0px 2em;
 		letter-spacing: 0.35em;
+		color: var(--menu-title);
 	}
 
 	h3 {
@@ -3718,8 +3724,8 @@ header {
 		max-width: 80%;
 		height: 100%;
 		-webkit-overflow-scrolling: touch;
-		background: #585858;
-		color: #ffffff;
+		background: var(--brand-green);
+		color: var(--medium-emphasis);
 		cursor: default;
 		visibility: hidden;
 		z-index: 10002;
