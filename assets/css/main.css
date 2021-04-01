@@ -19,11 +19,12 @@
 	/*logo blue #265f70*/
 	/*decent lighter green for hover 28633D*/
     --hover-color: #1B442B; /*green*/
-    --hover-light: #ffffff;
+    --hover-light: #1B442B;; /*for outline buttons on content pages*/
     --hover-intro: white; 
     --brand-green: #1B442B; /*for menu background mostly*/
     --menu-title: #ffffff;
-    --medium-emphasis: #ffffff90; /*for menu options before hover*/
+    --medium-emphasis: #ffffff90; /*for menu options un-hover*/
+    --hover-menu-options: #ffffff;
 }
 
 header {
@@ -3724,7 +3725,7 @@ header {
 		height: 100%;
 		-webkit-overflow-scrolling: touch;
 		background: var(--brand-green);
-		color: var(--medium-emphasis);
+		color: var(--medium-emphasis); /*for menu options before hover*/
 		cursor: default;
 		visibility: hidden;
 		z-index: 10002;
@@ -3765,7 +3766,7 @@ header {
 					}
 
 					#menu > .inner > ul > li a:hover {
-						color: var(--hover-light) !important;
+						color: var(--hover-menu-options) !important;
 						font-weight: 400;
 					}
 
