@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Wearable Carbon Footprint</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans|Josefin+Sans:400,600,700|Shadows+Into+Light|Great+Vibes|Handlee' rel='stylesheet' type='text/css'>
+
+  <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+  <script src="js/jquery.isotope.js" type="text/javascript"></script>
+
+  <script src="lightbox/js/lightbox.min.js"></script>
+  <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+
+  <!-- Bootstrap: Latest compiled and minified CSS and JavaScript -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body class="home-bg">
+
+<div class="header">
+  <div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Wearable Carbon Footprint</a>
+      </div>
+      <div class="collapse navbar-collapse" id="js-navbar-collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li><a href="blog.html">Blog</a></li>
+          <li class="slashes"> / </li>
+          <li><a href="projects.html">Related Projects</a></li>
+          <li class="slashes"> / </li>
+          <li><a href="process.html">References</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+
+  <div class="col-md-7" id="postContainer">
+
+
+    <div class="landingIntro">
+      <h1>Carbon Footprint Data Sash</h1>
+
+      <h4>An exploration of personal ecological data</h4>
+    </div>
+
+    <br>
+      
+    <diV class="landingIntro">
+      This project aims to help individuals better understand their own carbon footprint through the creation and donning of a personalized data sash.
+      <br><br>
+      By wearing the sash in public, it also acts as an intermediary object to spread public awareness, adding to the discourse of understanding personal and systematic environmental impact.
+    </diV>
+
+
+  </div>
+
+
+  </div>
+
+    <script type="text/javascript">
+    $(window).load(function(){
+      var $container = $('#postContainer');
+      $container.isotope({
+        filter: '*',
+        animationOptions: {
+          duration: 750,
+          easing: 'linear',
+          queue: false
+        }
+      });
+
+      $('.postFilter a').click(function(){
+        $('.postFilter .current').removeClass('current');
+        $(this).addClass('current');
+
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+          filter: selector,
+          animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+          }
+        });
+        return false;
+      });
+    });
+  </script>
+
+</div>
+
+</body>
+</html>
