@@ -2098,8 +2098,9 @@ header {
 
 		.introLinks:hover {
 			color: var(--hover-intro) !important;
-			font-weight: 400;
+    		text-shadow: 0 0 0.35px white; /*instead of font bold 400 */
 		}
+
 
 	strong, b {
 		font-weight: 900;
